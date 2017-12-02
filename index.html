@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <body style="margin: 0;">
 <button onclick="launchFullscreen(document.querySelector('iframe'));">Launch Fullscreen</button>
-<iframe src="https://appetize.io/embed/rqtaqpaygxctrxqwgd1h47ybmw?device=nexus9&scale=100&autoplay=true&orientation=landscape&deviceColor=black&screenOnly=true&language=en&xdocMsg=true" width="0px" height="0px" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://appetize.io/embed/rqtaqpaygxctrxqwgd1h47ybmw?device=nexus5&scale=500&autoplay=true&orientation=landscape&deviceColor=black&screenOnly=true&language=en&xdocMsg=true" width="0px" height="0px" frameborder="0" scrolling="no"></iframe>
 <script type="text/javascript">
-	setInterval( function(){ document.querySelector('iframe').contentWindow.postMessage('heartbeat', '*'); setScale(200) }, 3000);
+	setInterval( function(){ document.querySelector('iframe').contentWindow.postMessage('heartbeat', '*'); setScale(500) }, 3000);
 	function setScale(number){
     document.querySelector('iframe').contentWindow.postMessage({type: 'setScale', value: number}, '*');
 	}
